@@ -1,20 +1,23 @@
-//
-//  CalcBmiViewController.swift
-//  bmi2.0
-//
-//  Created by Артем on 1/11/19.
-//  Copyright © 2019 Артем. All rights reserved.
-//
-
 import UIKit
 
 class CalcBmiViewController: UIViewController {
     
-    @IBOutlet weak var imageResult: UIImageView!
+    var resultImage = UIImageView()
     @IBOutlet weak var labelResult: UILabel!
+    
+    
+    fileprivate func createImageView() {
+        self.resultImage.frame = CGRect(x: 60, y: 80, width: 200, height: 200)
+        self.resultImage.contentMode = .scaleAspectFit
+        self.resultImage.isUserInteractionEnabled = true
+        self.view.addSubview(resultImage)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //labelResult.text = "test"
+        createImageView()
+        labelResult.text = result.0
+        resultImage.image = result.1
     }
 }

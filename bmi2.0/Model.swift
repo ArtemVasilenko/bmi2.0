@@ -1,12 +1,7 @@
-//
-//  Model.swift
-//  bmi2.0
-//
-//  Created by Артем on 1/11/19.
-//  Copyright © 2019 Артем. All rights reserved.
-//
-
 import Foundation
+import UIKit
+
+var result = ("", resultImagesFun["alarm"]!)
 
 struct BmiCalc {
     var height: Double = 0.0
@@ -19,31 +14,34 @@ struct BmiCalc {
         self.sex = sex
     }
     
-    func bmiCalculation () -> String {
+    
+    func bmiCalcImage() -> (String, UIImage) {
         let bmi = Double(weight/((height/100)*(height/100)))
-        print(weight)
-        print(height)
-        print("результат \(bmi)")
-        
+        print(bmi)
         if sex == "Woman" {
             switch bmi {
-            case 0..<19: return "Недовес"
-            case 19...24: return "Нормальный вес"
-            case 25...30: return "Избыточный вес"
-            case 31...40: return "Ожирение"
-            case 40...: return "Очень резкое ожирение"
-            default: return "п"
+            case 0..<19: return ("Недовес", resultImagesFun["thin_woman"]!)
+            case 19..<25: return ("Нормальный вес", resultImagesFun["normal_woman"]!)
+            case 25..<30: return ("Избыточный вес", resultImagesFun["excess_woman"]!)
+            case 30..<40: return ("Ожирение", resultImagesFun["fat_woman1"]!)
+            case 40...: return ("Очень резкое ожирение", resultImagesFun["fat_woman"]!)
+            default: return ("сломалось", resultImagesFun["alarm"]!)
             }
         } else {
             switch bmi {
-            case 0..<20: return "Недовес"
-            case 20...25: return "Нормальный вес"
-            case 26...30: return "Избыточный вес"
-            case 31...40: return "Ожирение"
-            case 40...: return "Очень резкое ожирение"
-            default: return "х"
+            case 0..<20: return ("Недовес", resultImagesFun["thin_man"]!)
+            case 20..<25: return ("Нормальный вес", resultImagesFun["normal_man"]!)
+            case 25..<30: return ("Избыточный вес", resultImagesFun["excess_man"]!)
+            case 30..<40: return ("Ожирение", resultImagesFun["fat_man"]!)
+            case 40...: return ("Очень резкое ожирение", resultImagesFun["very_fat_man"]!)
+            default: return ("сломалось", resultImagesFun["alarm"]!)
             }
         }
+        
+        
     }
 }
+
+
+
 

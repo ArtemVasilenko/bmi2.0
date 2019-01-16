@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC4BD0BF21EC965600FF4114 /* ModelCalcBmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BD0BE21EC965600FF4114 /* ModelCalcBmi.swift */; };
+		AC4BD0C321ECCF4100FF4114 /* ImagesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BD0C221ECCF4100FF4114 /* ImagesEnum.swift */; };
 		AC96223121E7D3B2007D2BA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96223021E7D3B2007D2BA9 /* AppDelegate.swift */; };
 		AC96223321E7D3B2007D2BA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96223221E7D3B2007D2BA9 /* ViewController.swift */; };
 		AC96223621E7D3B2007D2BA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC96223421E7D3B2007D2BA9 /* Main.storyboard */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC4BD0BE21EC965600FF4114 /* ModelCalcBmi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCalcBmi.swift; sourceTree = "<group>"; };
+		AC4BD0C221ECCF4100FF4114 /* ImagesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesEnum.swift; sourceTree = "<group>"; };
 		AC96222D21E7D3B2007D2BA9 /* bmi2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bmi2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC96223021E7D3B2007D2BA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC96223221E7D3B2007D2BA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,13 +60,13 @@
 		AC96222F21E7D3B2007D2BA9 /* bmi2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				AC96223021E7D3B2007D2BA9 /* AppDelegate.swift */,
-				AC96223221E7D3B2007D2BA9 /* ViewController.swift */,
+				AC4BD0C221ECCF4100FF4114 /* ImagesEnum.swift */,
 				AC96224221E8AA77007D2BA9 /* Model.swift */,
-				AC96223421E7D3B2007D2BA9 /* Main.storyboard */,
 				AC96224421E8B120007D2BA9 /* CalcBmiViewController.swift */,
-				AC4BD0BE21EC965600FF4114 /* ModelCalcBmi.swift */,
+				AC96223221E7D3B2007D2BA9 /* ViewController.swift */,
 				AC96223721E7D3B4007D2BA9 /* Assets.xcassets */,
+				AC96223421E7D3B2007D2BA9 /* Main.storyboard */,
+				AC96223021E7D3B2007D2BA9 /* AppDelegate.swift */,
 				AC96223921E7D3B4007D2BA9 /* LaunchScreen.storyboard */,
 				AC96223C21E7D3B4007D2BA9 /* Info.plist */,
 			);
@@ -146,8 +146,8 @@
 			files = (
 				AC96224521E8B120007D2BA9 /* CalcBmiViewController.swift in Sources */,
 				AC96224321E8AA77007D2BA9 /* Model.swift in Sources */,
+				AC4BD0C321ECCF4100FF4114 /* ImagesEnum.swift in Sources */,
 				AC96223321E7D3B2007D2BA9 /* ViewController.swift in Sources */,
-				AC4BD0BF21EC965600FF4114 /* ModelCalcBmi.swift in Sources */,
 				AC96223121E7D3B2007D2BA9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
