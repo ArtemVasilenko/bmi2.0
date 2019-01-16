@@ -16,8 +16,19 @@ class CalcBmiViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapUser = UITapGestureRecognizer(target: self, action: #selector (userTap(tap:)))
+        resultImage.isUserInteractionEnabled = true
+        resultImage.addGestureRecognizer(tapUser)
+        
         createImageView()
         labelResult.text = result.0
         resultImage.image = result.1
+    }
+    
+    @objc func userTap (tap: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 0.75, animations: {
+            self.resultImage.center.y += 10
+            })
     }
 }
