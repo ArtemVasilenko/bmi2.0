@@ -4,6 +4,7 @@ import UIKit
 var result = ("", resultImagesFun["alarm"]!)
 
 struct BmiCalc {
+    
     var height: Double = 0.0
     var weight: Double = 0.0
     var sex = ""

@@ -1,10 +1,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var bmi = BmiCalc(sex: "Man", weight: 10, height: 101)
-    let sex = ["Man", "Woman"]
-    let height = Array(101...300)
-    let weight = Array(10...250)
+    var bmi = BmiCalc(sex: "Man", weight: 10, height: 101)  // <-- поменять
+    let sex = ["Man", "Woman"]  // < ---- перенести
+    let height = Array(101...300) // < ---- перенести
+    let weight = Array(10...250) // < ---- перенести
     
     
     @IBOutlet weak var pickerSex: UIPickerView!
@@ -13,12 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         self.pickerSex.delegate = self
         self.pickerSex.dataSource = self
     }
-    
     
     
     @IBAction func resultButton(_ sender: UIButton) {
