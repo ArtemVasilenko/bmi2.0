@@ -5,15 +5,10 @@ var result = ("", resultImagesFun["alarm"]!)
 
 struct BmiCalc {
     
-    var height: Double = 0.0
-    var weight: Double = 0.0
-    var sex = ""
+    var height: Double = 101.0
+    var weight: Double = 10.0
+    var sex = "man"
     
-    init(sex: String, weight: Int, height: Int) {
-        self.height = Double(height)
-        self.weight = Double(weight)
-        self.sex = sex
-    }
     
     
     func bmiCalcImage() -> (String, UIImage) {

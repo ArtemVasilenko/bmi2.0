@@ -1,11 +1,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var bmi = BmiCalc(sex: "Man", weight: 10, height: 101)  // <-- поменять
+    var bmi = BmiCalc()
     var picker = ValuesPicker()
 
-    
-    
     @IBOutlet weak var pickerSex: UIPickerView!
     @IBOutlet weak var helloImage: UIImageView!
     
