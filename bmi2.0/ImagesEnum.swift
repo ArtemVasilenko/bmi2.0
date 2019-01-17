@@ -17,6 +17,12 @@ let resultImagesFun: [String: UIImage] = [
 ]
 //}
 
+struct ValuesPicker {
+    let sex = ["Man", "Woman"] 
+    let height = Array(101...300)
+    let weight = Array(10...250)
+}
+
 
 
 

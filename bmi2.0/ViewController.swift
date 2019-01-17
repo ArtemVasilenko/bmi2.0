@@ -2,9 +2,8 @@ import UIKit
 
 class ViewController: UIViewController {
     var bmi = BmiCalc(sex: "Man", weight: 10, height: 101)  // <-- поменять
-    let sex = ["Man", "Woman"]  // < ---- перенести
-    let height = Array(101...300) // < ---- перенести
-    let weight = Array(10...250) // < ---- перенести
+    var picker = ValuesPicker()
+
     
     
     @IBOutlet weak var pickerSex: UIPickerView!
@@ -33,29 +32,29 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if component == 0 {
-            return sex.count
+            return picker.sex.count
         }
         if component == 1 {
-            return weight.count
+            return picker.weight.count
         }
-        return height.count
+        return picker.height.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if component == 0 {
-            return self.sex[row]
+            return self.picker.sex[row]
         }
         if component == 1 {
-            return String(weight[row])
+            return String(picker.weight[row])
         }
-        return String(height[row])
+        return String(picker.height[row])
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        bmi.sex = sex[pickerView.selectedRow(inComponent: 0)]
-        bmi.weight = Double(weight[pickerView.selectedRow(inComponent: 1)])
-        bmi.height = Double(height[pickerView.selectedRow(inComponent: 2)])
+        bmi.sex = picker.sex[pickerView.selectedRow(inComponent: 0)]
+        bmi.weight = Double(picker.weight[pickerView.selectedRow(inComponent: 1)])
+        bmi.height = Double(picker.height[pickerView.selectedRow(inComponent: 2)])
         
         print(bmi.sex, bmi.weight, bmi.height)
     }
