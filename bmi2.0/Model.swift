@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-//var result = ("", resultImagesFun["alarm"]!)
+//var result = ("error", UIImage())
 
 struct BmiCalc {
     var img = Images()
