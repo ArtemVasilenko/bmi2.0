@@ -9,17 +9,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.pickerSex.delegate = self
         self.pickerSex.dataSource = self
     }
     
-    
     @IBAction func resultButton(_ sender: UIButton) {
-       result = bmi.bmiCalcImage()
+        bmi.result = bmi.bmiCalcImage()
+        print(bmi.result)
     }
 }
-
 
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
