@@ -1,9 +1,8 @@
 import UIKit
 
 class CalcBmiViewController: UIViewController {
-    
-    var resultImage = UIImageView()
     var bmi = BmiCalc()
+    var resultImage = UIImageView()
     @IBOutlet weak var labelResult: UILabel!
     
 

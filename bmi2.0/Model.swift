@@ -3,7 +3,7 @@ import UIKit
 
 //var result = ("error", UIImage())
 
-struct BmiCalc {
+class BmiCalc {
     var img = Images()
     var height: Double = 101.0
     var weight: Double = 10.0

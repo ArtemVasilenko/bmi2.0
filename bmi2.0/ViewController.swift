@@ -3,7 +3,7 @@ import UIKit
 class ViewController: UIViewController {
     var bmi = BmiCalc()
     var picker = ValuesPicker()
-
+    
     @IBOutlet weak var pickerSex: UIPickerView!
     @IBOutlet weak var helloImage: UIImageView!
     
@@ -13,12 +13,17 @@ class ViewController: UIViewController {
         self.pickerSex.dataSource = self
     }
     
-    @IBAction func resultButton(_ sender: UIButton) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         bmi.result = bmi.bmiCalcImage()
+        let cbmvc = segue.destination as! CalcBmiViewController
+        cbmvc.bmi.result = bmi.result
+    }
+    
+    
+    @IBAction func resultButton(_ sender: UIButton) {
         print(bmi.result)
     }
 }
-
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     

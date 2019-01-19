@@ -13,33 +13,33 @@
         <!--Bmi-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bmi2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="bmi2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-2a-SvR">
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-2a-SvR">
                                 <rect key="frame" x="0.0" y="270" width="320" height="216"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIm-bW-KJm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIm-bW-KJm">
                                 <rect key="frame" x="51" y="235" width="28" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stq-Eu-vs4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stq-Eu-vs4">
                                 <rect key="frame" x="133" y="235" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhC-2c-hWZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhC-2c-hWZ">
                                 <rect key="frame" x="236" y="235" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-5Y-iuq">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-5Y-iuq">
                                 <rect key="frame" x="75" y="518" width="170" height="30"/>
                                 <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Find out your body index">
@@ -47,37 +47,24 @@
                                 </state>
                                 <connections>
                                     <action selector="resultButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7DB-2M-AA5"/>
-                                    <segue destination="NeJ-h2-hPi" kind="show" id="8iB-sc-OSj"/>
+                                    <segue destination="NeJ-h2-hPi" kind="show" identifier="" id="8iB-sc-OSj"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yakubovich" translatesAutoresizingMaskIntoConstraints="NO" id="X0U-Mg-xUH">
-                                <rect key="frame" x="16" y="64" width="288" height="163"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="163" id="WiX-bJ-Y20"/>
-                                    <constraint firstAttribute="width" constant="288" id="hvY-3G-IES"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.89814436435699463" green="0.35743564367294312" blue="0.29090723395347595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eIm-bW-KJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="2M0-sa-UVn"/>
                             <constraint firstItem="gPU-2a-SvR" firstAttribute="top" secondItem="stq-Eu-vs4" secondAttribute="bottom" constant="14" id="A2i-kS-Qmy"/>
-                            <constraint firstItem="X0U-Mg-xUH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FZI-5u-3vf"/>
-                            <constraint firstItem="eIm-bW-KJm" firstAttribute="top" secondItem="X0U-Mg-xUH" secondAttribute="bottom" constant="8" id="MSX-iv-knd"/>
                             <constraint firstItem="stq-Eu-vs4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXT-e2-VrX"/>
                             <constraint firstItem="gJj-5Y-iuq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wg1-Km-UWn"/>
                             <constraint firstItem="gPU-2a-SvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZFP-Gy-nNP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WhC-2c-hWZ" secondAttribute="trailing" constant="33" id="iBL-kc-exo"/>
-                            <constraint firstItem="X0U-Mg-xUH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jbx-N7-26s"/>
                             <constraint firstItem="gJj-5Y-iuq" firstAttribute="top" secondItem="gPU-2a-SvR" secondAttribute="bottom" constant="32" id="pFg-r9-pNM"/>
-                            <constraint firstItem="WhC-2c-hWZ" firstAttribute="top" secondItem="X0U-Mg-xUH" secondAttribute="bottom" constant="8" id="qoC-F5-0xa"/>
-                            <constraint firstItem="stq-Eu-vs4" firstAttribute="top" secondItem="X0U-Mg-xUH" secondAttribute="bottom" constant="8" id="xyU-ib-CZG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bmi" id="gDm-oo-Yxy"/>
                     <connections>
-                        <outlet property="helloImage" destination="X0U-Mg-xUH" id="ySA-NP-6gt"/>
                         <outlet property="pickerSex" destination="gPU-2a-SvR" id="dPm-N8-09w"/>
                     </connections>
                 </viewController>
@@ -88,7 +75,7 @@
         <!--Calc Bmi View Controller-->
         <scene sceneID="nLo-Az-wcL">
             <objects>
-                <viewController id="NeJ-h2-hPi" customClass="CalcBmiViewController" customModule="bmi2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalcBmiVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NeJ-h2-hPi" customClass="CalcBmiViewController" customModule="bmi2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FVf-0O-E0n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,10 +86,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kpA-oV-amk">
-                                <rect key="frame" x="40" y="73" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.86274509803921573" green="0.26666666666666666" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -112,6 +95,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j0D-hb-wgj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UJc-8m-XiX"/>
                     <connections>
                         <outlet property="labelResult" destination="QCv-7T-rXE" id="eIo-xY-w6V"/>
                     </connections>
@@ -119,6 +103,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtH-d8-IuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2274.375" y="499.64788732394368"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="IZF-IB-JBG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVw-aN-mfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="h1n-i4-iOn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcg-ly-pvm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mI4-UT-KRT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="0V4-uY-GkY"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1643" y="1706"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lCT-OB-6Rh">
@@ -136,10 +136,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Qy-V3-D6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240.80000000000001" y="792.95352323838085"/>
+            <point key="canvasLocation" x="173" y="500"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="yakubovich" width="960" height="640"/>
-    </resources>
 </document>
