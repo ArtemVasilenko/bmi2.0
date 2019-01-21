@@ -89,11 +89,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbS-Te-9QX">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hqd-Lo-yhm">
+                                        <rect key="frame" x="8" y="8" width="304" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="270" id="tiK-Bg-3uU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hqd-Lo-yhm" firstAttribute="centerX" secondItem="hbS-Te-9QX" secondAttribute="centerX" id="26q-Ni-RHN"/>
+                                    <constraint firstItem="Hqd-Lo-yhm" firstAttribute="trailing" secondItem="hbS-Te-9QX" secondAttribute="trailingMargin" id="V8O-Vt-OWV"/>
+                                    <constraint firstItem="Hqd-Lo-yhm" firstAttribute="leading" secondItem="hbS-Te-9QX" secondAttribute="leadingMargin" id="boD-X9-UxW"/>
+                                    <constraint firstItem="Hqd-Lo-yhm" firstAttribute="top" secondItem="hbS-Te-9QX" secondAttribute="topMargin" id="ti7-pC-CD5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hqd-Lo-yhm" secondAttribute="bottom" constant="226" id="tzf-R8-7s0"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.86274509803921573" green="0.26666666666666666" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="QCv-7T-rXE" firstAttribute="top" secondItem="j0D-hb-wgj" secondAttribute="top" constant="405" id="6ak-xU-ODg"/>
+                            <constraint firstItem="hbS-Te-9QX" firstAttribute="bottom" secondItem="j0D-hb-wgj" secondAttribute="bottom" id="BNy-6H-EEq"/>
+                            <constraint firstItem="hbS-Te-9QX" firstAttribute="leading" secondItem="j0D-hb-wgj" secondAttribute="leading" id="F4T-w1-eNd"/>
                             <constraint firstItem="j0D-hb-wgj" firstAttribute="bottom" secondItem="QCv-7T-rXE" secondAttribute="bottom" constant="78" id="U5B-RF-FHw"/>
+                            <constraint firstItem="hbS-Te-9QX" firstAttribute="trailing" secondItem="j0D-hb-wgj" secondAttribute="trailing" id="Waz-Lg-fJ6"/>
+                            <constraint firstItem="hbS-Te-9QX" firstAttribute="top" secondItem="j0D-hb-wgj" secondAttribute="top" id="XHB-u4-dej"/>
                             <constraint firstItem="QCv-7T-rXE" firstAttribute="centerX" secondItem="FVf-0O-E0n" secondAttribute="centerX" id="tDU-lb-fxH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j0D-hb-wgj"/>
@@ -101,6 +123,8 @@
                     <navigationItem key="navigationItem" id="UJc-8m-XiX"/>
                     <connections>
                         <outlet property="labelResult" destination="QCv-7T-rXE" id="eIo-xY-w6V"/>
+                        <outlet property="resultImage" destination="Hqd-Lo-yhm" id="Snz-Od-VEM"/>
+                        <outlet property="scrollView" destination="hbS-Te-9QX" id="qc0-ll-hgb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtH-d8-IuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
