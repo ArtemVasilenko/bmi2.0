@@ -1,16 +1,24 @@
 import Foundation
 import UIKit
 
-//var result = ("error", UIImage())
 
-class BmiCalc {
+protocol Bmi {
+    var img: Images {get set}
+    var height: Double {get set}
+    var weight: Double {get set}
+    var sex: String {get set}
+    var result: (String, UIImage) {get set}
+    func bmiCalc() -> (String, UIImage)
+}
+
+struct BmiCalc: Bmi {
     var img = Images()
     var height: Double = 101.0
     var weight: Double = 10.0
     var sex = "man"
     var result = ("error", UIImage())
     
-    func bmiCalcImage() -> (String, UIImage) {
+    func bmiCalc() -> (String, UIImage) {
         let bmi = Double(weight/((height/100)*(height/100)))
         print(bmi)
         if sex == "Woman" {

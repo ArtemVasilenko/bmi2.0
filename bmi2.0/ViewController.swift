@@ -1,7 +1,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var bmi = BmiCalc()
+    var bmi: Bmi = BmiCalc()
     var picker = ValuesPicker()
     
     @IBOutlet weak var pickerSex: UIPickerView!
@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        bmi.result = bmi.bmiCalcImage()
+        bmi.result = bmi.bmiCalc()
         let cbmvc = segue.destination as! CalcBmiViewController
         cbmvc.bmi.result = bmi.result
     }

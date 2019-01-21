@@ -1,7 +1,7 @@
 import UIKit
 
 class CalcBmiViewController: UIViewController {
-    var bmi = BmiCalc()
+    var bmi: Bmi = BmiCalc()
     var resultImage = UIImageView()
     @IBOutlet weak var labelResult: UILabel!
     
@@ -15,6 +15,7 @@ class CalcBmiViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //MARK: TapUser
         let tapUser = UITapGestureRecognizer(target: self, action: #selector (userTap(tap:)))
         resultImage.isUserInteractionEnabled = true

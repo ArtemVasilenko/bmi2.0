@@ -18,28 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-2a-SvR">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-2a-SvR">
                                 <rect key="frame" x="0.0" y="270" width="320" height="216"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIm-bW-KJm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIm-bW-KJm">
                                 <rect key="frame" x="51" y="235" width="28" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stq-Eu-vs4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stq-Eu-vs4">
                                 <rect key="frame" x="133" y="235" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhC-2c-hWZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhC-2c-hWZ">
                                 <rect key="frame" x="236" y="235" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-5Y-iuq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-5Y-iuq">
                                 <rect key="frame" x="75" y="518" width="170" height="30"/>
                                 <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Find out your body index">
@@ -53,13 +53,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.89814436435699463" green="0.35743564367294312" blue="0.29090723395347595" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eIm-bW-KJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="2M0-sa-UVn"/>
                             <constraint firstItem="gPU-2a-SvR" firstAttribute="top" secondItem="stq-Eu-vs4" secondAttribute="bottom" constant="14" id="A2i-kS-Qmy"/>
+                            <constraint firstItem="WhC-2c-hWZ" firstAttribute="baseline" secondItem="stq-Eu-vs4" secondAttribute="baseline" id="DHc-b7-6kh"/>
+                            <constraint firstItem="eIm-bW-KJm" firstAttribute="baseline" secondItem="stq-Eu-vs4" secondAttribute="baseline" id="SGb-Qj-Qny"/>
                             <constraint firstItem="stq-Eu-vs4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXT-e2-VrX"/>
                             <constraint firstItem="gJj-5Y-iuq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wg1-Km-UWn"/>
                             <constraint firstItem="gPU-2a-SvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZFP-Gy-nNP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WhC-2c-hWZ" secondAttribute="trailing" constant="33" id="iBL-kc-exo"/>
+                            <constraint firstItem="eIm-bW-KJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="eC3-zd-5he"/>
+                            <constraint firstItem="WhC-2c-hWZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="171" id="laY-Xg-oAQ"/>
                             <constraint firstItem="gJj-5Y-iuq" firstAttribute="top" secondItem="gPU-2a-SvR" secondAttribute="bottom" constant="32" id="pFg-r9-pNM"/>
+                            <constraint firstItem="WhC-2c-hWZ" firstAttribute="leading" secondItem="stq-Eu-vs4" secondAttribute="trailing" constant="49" id="x9r-qK-b9n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -103,22 +106,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtH-d8-IuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2274.375" y="499.64788732394368"/>
-        </scene>
-        <!--Item 2-->
-        <scene sceneID="IZF-IB-JBG">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iVw-aN-mfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="h1n-i4-iOn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hcg-ly-pvm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="mI4-UT-KRT"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="0V4-uY-GkY"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="-1643" y="1706"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lCT-OB-6Rh">
