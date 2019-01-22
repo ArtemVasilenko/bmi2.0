@@ -12,9 +12,11 @@ class CalcBmiViewController: UIViewController {
         self.scrollView.delegate = self
         self.scrollView.maximumZoomScale = 6
         self.scrollView.minimumZoomScale = 1.0
+        
+        
         //MARK: calculation results into label and image
-        labelResult.text = bmi.result.0
-        resultImage.image = bmi.result.1
+        self.labelResult.text = bmi.result.0
+        self.resultImage.image = bmi.result.1
     }
 }
 

@@ -9,6 +9,7 @@ protocol Bmi {
     var sex: String {get set}
     var result: (String, UIImage) {get set}
     func bmiCalc() -> (String, UIImage)
+    
 }
 
 struct BmiCalc: Bmi {

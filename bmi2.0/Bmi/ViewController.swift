@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         cbmvc.bmi.result = bmi.result
     }
     
-    
     @IBAction func resultButton(_ sender: UIButton) {
         print(bmi.result)
     }

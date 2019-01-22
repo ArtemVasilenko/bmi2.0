@@ -15,6 +15,8 @@
 		AC96223B21E7D3B4007D2BA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC96223921E7D3B4007D2BA9 /* LaunchScreen.storyboard */; };
 		AC96224321E8AA77007D2BA9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96224221E8AA77007D2BA9 /* Model.swift */; };
 		AC96224521E8B120007D2BA9 /* CalcBmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96224421E8B120007D2BA9 /* CalcBmiViewController.swift */; };
+		ACF0F76521F61ABB004D42A1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0F76421F61ABB004D42A1 /* TableViewController.swift */; };
+		ACF0F76921F61B9F004D42A1 /* ModelTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0F76821F61B9F004D42A1 /* ModelTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AC96223C21E7D3B4007D2BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC96224221E8AA77007D2BA9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AC96224421E8B120007D2BA9 /* CalcBmiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcBmiViewController.swift; sourceTree = "<group>"; };
+		ACF0F76421F61ABB004D42A1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		ACF0F76821F61B9F004D42A1 /* ModelTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC7AB60721F72A1E00B79B0E /* TableSettings */ = {
+			isa = PBXGroup;
+			children = (
+				ACF0F76421F61ABB004D42A1 /* TableViewController.swift */,
+				ACF0F76821F61B9F004D42A1 /* ModelTable.swift */,
+			);
+			path = TableSettings;
+			sourceTree = "<group>";
+		};
+		AC7AB60821F72A5100B79B0E /* Bmi */ = {
+			isa = PBXGroup;
+			children = (
+				AC96223221E7D3B2007D2BA9 /* ViewController.swift */,
+				AC96224421E8B120007D2BA9 /* CalcBmiViewController.swift */,
+				AC96224221E8AA77007D2BA9 /* Model.swift */,
+				AC4BD0C221ECCF4100FF4114 /* ImagesEnum.swift */,
+			);
+			path = Bmi;
+			sourceTree = "<group>";
+		};
 		AC96222421E7D3B2007D2BA9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,13 +84,11 @@
 		AC96222F21E7D3B2007D2BA9 /* bmi2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				AC4BD0C221ECCF4100FF4114 /* ImagesEnum.swift */,
-				AC96224221E8AA77007D2BA9 /* Model.swift */,
-				AC96224421E8B120007D2BA9 /* CalcBmiViewController.swift */,
-				AC96223221E7D3B2007D2BA9 /* ViewController.swift */,
-				AC96223721E7D3B4007D2BA9 /* Assets.xcassets */,
-				AC96223421E7D3B2007D2BA9 /* Main.storyboard */,
+				AC7AB60821F72A5100B79B0E /* Bmi */,
+				AC7AB60721F72A1E00B79B0E /* TableSettings */,
 				AC96223021E7D3B2007D2BA9 /* AppDelegate.swift */,
+				AC96223421E7D3B2007D2BA9 /* Main.storyboard */,
+				AC96223721E7D3B4007D2BA9 /* Assets.xcassets */,
 				AC96223921E7D3B4007D2BA9 /* LaunchScreen.storyboard */,
 				AC96223C21E7D3B4007D2BA9 /* Info.plist */,
 			);
@@ -145,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC96224521E8B120007D2BA9 /* CalcBmiViewController.swift in Sources */,
+				ACF0F76521F61ABB004D42A1 /* TableViewController.swift in Sources */,
+				ACF0F76921F61B9F004D42A1 /* ModelTable.swift in Sources */,
 				AC96224321E8AA77007D2BA9 /* Model.swift in Sources */,
 				AC4BD0C321ECCF4100FF4114 /* ImagesEnum.swift in Sources */,
 				AC96223321E7D3B2007D2BA9 /* ViewController.swift in Sources */,
