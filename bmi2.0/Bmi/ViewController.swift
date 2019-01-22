@@ -4,6 +4,7 @@ class ViewController: UIViewController {
     var bmi: Bmi = BmiCalc()
     var picker = ValuesPicker()
     
+    
     @IBOutlet weak var pickerSex: UIPickerView!
     @IBOutlet weak var helloImage: UIImageView!
     

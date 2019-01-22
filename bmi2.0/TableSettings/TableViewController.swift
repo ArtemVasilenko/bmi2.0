@@ -7,11 +7,10 @@ class TableViewController: UITableViewController {
     var settingsArray: SettingsValues = Values()
     var identVC: SettingsValues = Values()
     var darkTheme = false
-    
+    var colorTheme: SettingsValues = Values()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
 
@@ -27,7 +26,6 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = settingsArray.names[indexPath.row]
         let switchik = UISwitch(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
@@ -45,13 +43,11 @@ class TableViewController: UITableViewController {
     
     @objc func switchTarget (param: UISwitch) {
         if param.isOn {
-            self.view.backgroundColor = UIColor.darkGray
+            self.view.backgroundColor = colorTheme.backgroundColorDarkGray
             self.darkTheme = true
-            print(darkTheme)
         } else {
-            self.view.backgroundColor = UIColor.red
+            self.view.backgroundColor = colorTheme.backgroundColorWhite
             self.darkTheme = false
-            print(darkTheme)
         }
     }
     
