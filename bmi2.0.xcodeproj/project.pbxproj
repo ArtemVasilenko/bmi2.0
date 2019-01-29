@@ -17,6 +17,8 @@
 		AC96223B21E7D3B4007D2BA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC96223921E7D3B4007D2BA9 /* LaunchScreen.storyboard */; };
 		AC96224321E8AA77007D2BA9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96224221E8AA77007D2BA9 /* Model.swift */; };
 		AC96224521E8B120007D2BA9 /* CalcBmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC96224421E8B120007D2BA9 /* CalcBmiViewController.swift */; };
+		ACD6EFAE21F859C100515E71 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6EFAD21F859C100515E71 /* SignViewController.swift */; };
+		ACD6EFB021F859E700515E71 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6EFAF21F859E700515E71 /* RegistrationViewController.swift */; };
 		ACF0F76521F61ABB004D42A1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0F76421F61ABB004D42A1 /* TableViewController.swift */; };
 		ACF0F76921F61B9F004D42A1 /* ModelTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0F76821F61B9F004D42A1 /* ModelTable.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		AC96223C21E7D3B4007D2BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC96224221E8AA77007D2BA9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AC96224421E8B120007D2BA9 /* CalcBmiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcBmiViewController.swift; sourceTree = "<group>"; };
+		ACD6EFAD21F859C100515E71 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		ACD6EFAF21F859E700515E71 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		ACF0F76421F61ABB004D42A1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		ACF0F76821F61B9F004D42A1 /* ModelTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,13 +104,23 @@
 			children = (
 				AC7AB60821F72A5100B79B0E /* Bmi */,
 				AC7AB60721F72A1E00B79B0E /* TableSettings */,
-				AC96223021E7D3B2007D2BA9 /* AppDelegate.swift */,
 				AC7AB60B21F74A0E00B79B0E /* Sto */,
-				AC96223721E7D3B4007D2BA9 /* Assets.xcassets */,
+				ACD6EFAA21F858CC00515E71 /* Sign In */,
 				AC96223921E7D3B4007D2BA9 /* LaunchScreen.storyboard */,
+				AC96223721E7D3B4007D2BA9 /* Assets.xcassets */,
 				AC96223C21E7D3B4007D2BA9 /* Info.plist */,
+				AC96223021E7D3B2007D2BA9 /* AppDelegate.swift */,
 			);
 			path = bmi2.0;
+			sourceTree = "<group>";
+		};
+		ACD6EFAA21F858CC00515E71 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				ACD6EFAD21F859C100515E71 /* SignViewController.swift */,
+				ACD6EFAF21F859E700515E71 /* RegistrationViewController.swift */,
+			);
+			path = "Sign In";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +199,8 @@
 				AC96224521E8B120007D2BA9 /* CalcBmiViewController.swift in Sources */,
 				ACF0F76521F61ABB004D42A1 /* TableViewController.swift in Sources */,
 				ACF0F76921F61B9F004D42A1 /* ModelTable.swift in Sources */,
+				ACD6EFB021F859E700515E71 /* RegistrationViewController.swift in Sources */,
+				ACD6EFAE21F859C100515E71 /* SignViewController.swift in Sources */,
 				AC96224321E8AA77007D2BA9 /* Model.swift in Sources */,
 				AC4BD0C321ECCF4100FF4114 /* ImagesEnum.swift in Sources */,
 				AC96223321E7D3B2007D2BA9 /* ViewController.swift in Sources */,
